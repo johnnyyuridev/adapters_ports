@@ -1,0 +1,47 @@
+docker run -it --rm -p 8082:8082 --name wiremock -v /home/johnny/address:/home/wiremock/mappings wiremock/wiremock:3.9.1
+sudo java -jar wiremock-jre8-standalone-2.35.0.jar --port 8082
+http://localhost:8082/addresses/38400000
+http://localhost:8082/addresses/38400001
+
+
+mongosh -u root -p
+show collections
+show collections
+db.customerEntity.find()
+
+
+get:
+http://localhost:8081/api/v1/customers/66db12118dc6f057095ba6db
+post:
+http://localhost:8081/api/v1/customers
+{
+    "name":"Danilo",
+    "zipCode":"38400001",
+    "cpf": "22334455"
+
+put:
+http://localhost:8081/api/v1/customers/66db12118dc6f057095ba6db
+{
+    "name":"Danilo",
+    "zipCode":"38400001",
+    "cpf": "0000000005"
+}
+delete:
+
+
+Verificar CPF:
+----criar topic no kafka:
+    tp-cpf-validated
+    tp-cpf-validation
+
+-------publicar no kafka topic tp-cpf-validated
+{
+  "id": "66db3a0e8dc6f057095ba6dd",
+  "name":"Johnny66",
+  "zipCode":"38400001",
+  "cpf": "20005",
+  "isValidCpf": true
+}
+
+
+
