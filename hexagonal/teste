@@ -8,6 +8,7 @@ mongosh -u root -p
 show collections
 show collections
 db.customerEntity.find()
+db.customer.find()
 
 
 get:
@@ -36,7 +37,7 @@ Verificar CPF:
 
 -------publicar no kafka topic tp-cpf-validated
 {
-  "id": "66db3a0e8dc6f057095ba6dd",
+  "id": "66e02e801ccf4862a52a7421",
   "name":"Johnny66",
   "zipCode":"38400001",
   "cpf": "20005",
